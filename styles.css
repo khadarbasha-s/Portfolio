@@ -353,3 +353,151 @@ footer {
       text-align: justify;
     }
   }
+/* ============ ENHANCED PORTFOLIO STYLES ============ */
+
+/* Experience Section */
+.experience-card {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.exp-header {
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid rgb(163, 163, 210);
+  padding-bottom: 1rem;
+}
+
+.exp-company {
+  font-size: 1.1rem;
+  color: rgb(85, 85, 85);
+  margin-top: 0.3rem;
+}
+
+.exp-dates {
+  font-size: 1rem;
+  color: rgb(130, 130, 130);
+  font-style: italic;
+  margin-top: 0.2rem;
+}
+
+.exp-bullets {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  text-align: left;
+}
+
+.exp-bullets li {
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+}
+
+/* Project Cards */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.project-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+}
+
+.project-subtitle {
+  color: rgb(103, 103, 154);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.project-tech {
+  font-size: 0.85rem;
+  color: rgb(85, 85, 85);
+  margin-bottom: 0.8rem;
+  background: rgba(163, 163, 210, 0.15);
+  padding: 0.4rem 0.7rem;
+  border-radius: 0.5rem;
+}
+
+.project-desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: rgb(60, 60, 60);
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.project-btn {
+  margin-top: auto;
+}
+
+/* Certifications Grid */
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.cert-card {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.cert-card h3 {
+  font-size: 1rem;
+  margin: 0.8rem 0 0.4rem;
+}
+
+.cert-card p {
+  font-size: 0.85rem;
+  color: rgb(85, 85, 85);
+}
+
+/* Contact section additional styles */
+.contact-info-upper-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem 1.5rem;
+  background: white;
+  border-radius: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact-info-container p a {
+  text-decoration: none;
+  color: rgb(103, 103, 154);
+  font-weight: 500;
+}
+
+.contact-info-container p a:hover {
+  text-decoration: underline;
+}
