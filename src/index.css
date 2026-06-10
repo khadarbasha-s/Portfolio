@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-body antialiased;
+  }
+
+  ::selection {
+    @apply bg-blue-600/20 text-blue-600;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-100 dark:bg-slate-900;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-300 dark:bg-slate-700 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-blue-600;
+  }
+}
+
+@layer utilities {
+  .section-header {
+    @apply text-center mb-14 relative;
+  }
+
+  /* Subtle blue glow behind every section title */
+  .section-header::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 120px;
+    background: radial-gradient(ellipse, rgba(37, 99, 235, 0.07), transparent 70%);
+    pointer-events: none;
+  }
+
+  .section-header > * {
+    position: relative;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .section-label {
+    @apply font-medium text-xs uppercase tracking-[0.2em] mb-3 block;
+    background: linear-gradient(to right, #3b82f6, #06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .section-title {
+    @apply font-heading text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white;
+  }
+
+  .card {
+    @apply bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-600/60 rounded-2xl;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent;
+  }
+}
