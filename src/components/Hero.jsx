@@ -214,7 +214,7 @@ export default function Hero() {
               {/* Gradient border ring */}
               <div className="absolute -inset-[3px] rounded-3xl bg-gradient-to-br from-blue-600 via-cyan-500 to-blue-600 opacity-70 blur-[1px]" />
               <img
-                src="/khadar_image.jpg"
+                src={`${import.meta.env.BASE_URL}khadar_image.jpg`}
                 alt="Khadar Basha"
                 className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-3xl object-cover object-top"
               />

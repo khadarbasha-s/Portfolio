@@ -9,7 +9,7 @@ export const personal = {
   linkedin: 'https://www.linkedin.com/in/khadarbasha-s/',
   github: 'https://github.com/khadarbasha-s',
   // Place Khadar_CV.pdf in /public and update this path
-  resume: '/Khadar_CV.pdf',
+  resume: `${import.meta.env.BASE_URL}Khadar_CV.pdf`,
   location: 'Bengaluru, India',
   stats: [
     { value: '2+',   label: 'Years Experience' },
