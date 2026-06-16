@@ -286,6 +286,14 @@ export const caseStudies = [
 
 export const certifications = [
   {
+    name: 'Claude Certified Architect – Foundations',
+    issuer: 'Anthropic',
+    date: 'Jun 2026',
+    color: '#C96442',
+    abbr: 'CCA-F',
+    url: 'https://verify.skilljar.com/c/tggc7bwa7k2v',
+  },
+  {
     name: 'Generative AI: Prompt Engineering Basics',
     issuer: 'IBM SkillsBuild',
     date: 'Feb 2026',
